@@ -1,0 +1,98 @@
+.app.light {
+    .form-section{
+        .add-char-form{
+            .btn-submit:hover {
+                background-color: rgb(255, 152, 0);
+            }
+            .add-char-form-grid{
+                .form-input-group{
+                    .form-radio-group label:hover{
+                        color: rgb(55, 18, 99);
+                    }
+                    .form-radio-group {
+                        color: rgb(55, 18, 99);
+                    }
+                }
+            }
+        }
+    }
+}
+.add-own-character {
+    margin-bottom: 85px;
+}
+.form-section {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+    .add-char-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 600px;
+
+        .btn {
+            margin: 0.75rem;
+            padding: 0.75rem;
+            color: rgb(51, 51, 51);
+            width: 100px;
+        }
+        
+        .btn-submit:hover{
+            background-color: rgb(0, 170, 0);
+            color: rgb(245, 245, 245);
+        }
+        
+        .add-char-form-grid{
+            display: flex;
+            flex-direction: row;
+
+            .lable-large label, .form-input-group .lable-large{
+                font-size: 18px;
+            }
+
+            .main-input{
+                width: 400px;
+            }
+
+            .form-input-group{
+                display: flex;
+                flex-direction: column;
+                margin: 0 10px ;
+
+                .validation-error-message{
+                    padding-top: 5px;
+                    color: rgb(255, 0, 0);
+                }
+
+                .form-radio-group{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    label {
+                        padding: 5px 0;
+
+                        input {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+
+                .form-radio-group label:hover{
+                    color: rgb(255, 152, 0);
+                }
+
+                .radio-group-label {
+                    margin-top: 0;
+                }
+
+                label, .radio-group-label {
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: rgb(245, 245, 245);
+                }
+            }
+        }
+    }
+}
